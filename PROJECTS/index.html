@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Page</title>
+    <style>
+      marquee {
+        background-color: orange;
+        width: 100%;
+      }
+
+      header {
+        display: flex;
+        background-color: black;
+        width: 100%;
+      }
+
+      header h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-top: 10px;
+        color: white;
+      }
+
+      header p {
+        padding-left: 100px;
+        padding-top: 10px;
+        color: white;
+      }
+
+      .icons {
+        padding-left: 700px;
+        padding-top: 25px;
+      }
+
+      .icons i {
+        padding-right: 30px;
+        color: white;
+      }
+
+      .content {
+        /* display: grid;
+        grid-template-columns: 6% 24% 50% 20%; */
+        display: flex;
+        background-color: rgb(196, 199, 199);
+        padding-bottom: 10px;
+      }
+
+      .content i {
+        font-size: 20px;
+        padding-top: 30px;
+        padding-left: 10px;
+        color: rgb(74, 192, 74);
+      }
+
+      .content h1 {
+        color: rgb(74, 192, 74);
+        padding-left: 5px;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+
+      .content .items {
+        margin-left: 70px;
+        padding-top: 30px;
+      }
+
+      .content .items a {
+        margin-right: 30px;
+        text-decoration: none;
+        font-family: cursive;
+        color: black;
+        display: inline;
+      }
+
+      .content .items a:hover {
+        background-color: white;
+        color: red;
+      }
+
+      #article {
+        display: none;
+      }
+
+      #courses:hover #article {
+        display: block;
+        background-color: white;
+        color: black;
+        font-family: cursive;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin-left: 120px;
+        margin-top: 10px;
+        padding-left: 10px;
+      }
+
+      .content button {
+        margin-left: 650px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 25px;
+        background-color: rgb(74, 192, 74);
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      section {
+        background-image: url("images/high_quality_one.jpg");
+        height: 400px;
+        width: 1220px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: hi 8s infinite;
+        padding-top: 100px;
+        padding-left: 300px;
+        color: white;
+      }
+
+      section button {
+        background-color: rgb(74, 192, 74);
+        color: white;
+        padding: 10px;
+      }
+
+      @keyframes hi {
+        20% {
+          background-image: url("images/high_quality_two.jpg");
+        }
+        40% {
+          background-image: url("images/high_quality_three.jpg");
+        }
+
+        60% {
+          background-image: url("images/high_quality_four.jpg");
+        }
+      }
+    </style>
+  </head>
+  <script
+    src="https://kit.fontawesome.com/5c6d09dda0.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <marquee
+      behaviour="alternate"
+      direction="left"
+      onMouseOver="this.stop()"
+      onMouseOut="this.start()"
+      >Our best offer ever!! Summer Special-Get 3 Courses at 22499/- only.<a
+        href=""
+      >
+        Read More
+      </a>
+    </marquee>
+    <header>
+      <h2>Email:sunitisinha@gmail.com</h2>
+      <p>Contact:+91 9876543210</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </header>
+
+    <div class="content">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <h1>RJ Technology</h1>
+      <div class="items">
+        <a href="">Home</a>
+        <a href="">About</a>
+
+        <a href="" id="courses"
+          >Courses
+          <div id="article">
+            <p>Frontend</p>
+            <p>Backend</p>
+          </div>
+        </a>
+
+        <a href="">Online Training</a>
+        <a href="">Contact</a>
+      </div>
+      <button><b>Enquiry</b></button>
+    </div>
+
+    <section>
+      <h1>RJ Technologies</h1>
+      <p>Best Online & Classroom Training Institute</p>
+      <br /><br /><br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Nisi,
+        distinctio voluptas. Fugiat error itaque tempore dolorum consequatur,
+        deserunt<br />
+        laudantium, omnis explicabo iste ad temporibus maiores doloribus quas
+        corrupti,<br />
+        voluptatum exercitationem repudiandae! A blanditiis repudiandae rem
+        molestias, consectetur sit. Ut, quo?
+      </p>
+
+      <button>Apply Online</button>
+    </section>
+  </body>
+</html>
