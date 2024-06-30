@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React-App</title>
+    <style>
+      .main {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        background-color: aquamarine;
+      }
+
+      .head {
+        font-family: "Times New Roman", Times, serif;
+        padding-left: 100px;
+      }
+
+      .items {
+        padding-top: 30px;
+      }
+
+      .items a {
+        padding-right: 60px;
+      }
+
+      .main1 {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        background-color: aqua;
+        width: 100%;
+        padding-bottom: 50px;
+      }
+
+      .main1 .content {
+        font-family: cursive;
+        padding-left: 50px;
+      }
+
+      .main1 .image img {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-top: 50px;
+        margin-left: 300px;
+      }
+
+      .main1 .content button {
+        background-color: navy;
+        color: white;
+        border-radius: 30px;
+      }
+
+      #class {
+        border: 1px solid black;
+
+        width: 50px;
+        border-radius: 30px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="head">
+        <h2>React Developer</h2>
+      </div>
+      <div class="items">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Gallery</a>
+        <a href="" id="class">Join Class</a>
+      </div>
+    </div>
+
+    <div class="main1">
+      <div class="content">
+        <h5>Kids Learning Center</h5>
+        <hr />
+        <h2>New Approach to Kids Education</h2>
+        <p>
+          Make education possible for every child.Join hands with an NGO and
+          serve the poor.Donate for education and help children attain age
+          appropriate learning.Make education possible for every child.Join
+          hands with an NGO and serve the poor.Donate for education and help
+          children attain age appropriate learning.
+        </p>
+        <hr />
+        <button>Learn More</button>
+      </div>
+      <div class="image">
+        <img src="images/image.png" height="200px" width="200px" />
+      </div>
+    </div>
+  </body>
+</html>

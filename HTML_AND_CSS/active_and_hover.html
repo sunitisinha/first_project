@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /*selectors
+      3 types of selectors
+      id selector--unique identity #
+      class selector--
+
+      tag selector*/
+      /* #Item1 {
+        background-color: black;
+        color: white;
+        padding: 50px;
+        text-align: center;
+        width: 300px;
+        float: left;
+        width: 100%;
+      }
+
+      .Item2 {
+        background-color: brown;
+        color: white;
+        padding: 50px;
+        width: 300px;
+        text-align: center;
+        float: right;
+        width: 100%;
+      } */
+
+      ul li {
+        list-style: none;
+        display: inline;
+      }
+
+      a {
+        text-decoration: none;
+        padding-right: 60px;
+      }
+
+      .group {
+        background-color: aqua;
+        padding: 40px;
+      }
+
+      .group:hover {
+        background-color: blueviolet;
+      }
+
+      a:hover {
+        color: white;
+      }
+
+      .group:active {
+        background-color: chartreuse;
+      }
+
+      a:active {
+        color: red;
+      }
+
+      .head1 {
+        background-color: brown;
+        color: white;
+        width: 350px;
+        padding: 20px;
+        text-align: center;
+        border-right: 5px solid red;
+      }
+
+      table {
+        width: 100%;
+
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 2px solid black;
+        padding: 20px;
+      }
+
+      th {
+        background-color: navy;
+        color: white;
+      }
+
+      td {
+        background-color: aquamarine;
+        text-align: center;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--CSS--Cascading Style Sheets-->
+    <!--which is used to add the styling for HTML document-->
+
+    <!--CSS3 -->
+
+    <!--Three ways to write  CSS code
+  
+  Inline CSS--within the style attribute
+  Internal CSS--Page name by using title
+  External CSS--WE need to create new CSS file and we can connect external file by using external CSS
+
+  Margin--which is used to create the space outside the block
+  Padding--which is used to create the space inside the block
+Hover-which is used to make the actions
+  -->
+
+    <!-- <div id="Item1">
+      <h1>Frontend</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+        exercitationem commodi perspiciatis accusamus nam voluptatum iure
+        reprehenderit animi neque voluptate excepturi doloremque quibusdam, quo
+        aut nemo ipsa perferendis reiciendis accusantium magnam nihil! Pariatur
+        consectetur enim fugiat quia eum architecto nemo assumenda, labore
+        soluta corrupti facere quas quidem, quos veniam voluptates.
+      </p>
+    </div>
+
+    <div class="Item2">
+      <h1 id="head">Backend!</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti velit
+        blanditiis, cupiditate odio praesentium odit voluptatibus officiis
+        eveniet rem rerum hic molestiae voluptas non temporibus laudantium porro
+        quam voluptatum id vel illum ipsa! Dolor, deleniti tenetur? Veritatis
+        expedita hic iure sed. Nesciunt, est optio? Voluptatum excepturi itaque
+        quod quas at.
+      </p>
+      CSS
+      Inline
+      Floatwhich is used to align the items in right and left side
+    </div>-->
+
+    <ul class="group">
+      <li>
+        <a href="Heading3.hrml">Home</a>
+      </li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Login & Logout</a></li>
+    </ul>
+
+    <div class="head1">
+      <img src="image.png" height="200px" width="200px" />
+      <h1>Full Stack</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quas ea
+        natus laudantium quaerat explicabo labore sequi numquam adipisci maxime!
+      </p>
+      <button>Join Us</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Name</th>
+          <th>City</th>
+          <th>Date</th>
+          <th>State</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>Suniti Sinha</td>
+          <td>Bangalore</td>
+          <td>12 April</td>
+          <td>Karnataka</td>
+          <td>8679067890</td>
+        </tr>
+
+        <tr>
+          <td>02</td>
+          <td>Salil Sinha</td>
+          <td>Bangalore</td>
+          <td>12March</td>
+          <td>Karnataka</td>
+          <td>6789012345</td>
+        </tr>
+
+        <tr>
+          <td>03</td>
+          <td>Suniti Sinha</td>
+          <td>Bangalore</td>
+          <td>12 April</td>
+          <td>Karnataka</td>
+          <td>8679067890</td>
+        </tr>
+
+        <tr>
+          <td>04</td>
+          <td>Salil Sinha</td>
+          <td>Bangalore</td>
+          <td>12March</td>
+          <td>Karnataka</td>
+          <td>6789012345</td>
+        </tr>
+
+        <tr>
+          <td>05</td>
+          <td>Suniti Sinha</td>
+          <td>Bangalore</td>
+          <td>12 April</td>
+          <td>Karnataka</td>
+          <td>8679067890</td>
+        </tr>
+
+        <tr>
+          <td>06</td>
+          <td>Salil Sinha</td>
+          <td>Bangalore</td>
+          <td>12March</td>
+          <td>Karnataka</td>
+          <td>6789012345</td>
+        </tr>
+
+        <tr>
+          <td>07</td>
+          <td>Suniti Sinha</td>
+          <td>Bangalore</td>
+          <td>12 April</td>
+          <td>Karnataka</td>
+          <td>8679067890</td>
+        </tr>
+
+        <tr>
+          <td>08</td>
+          <td>Salil Sinha</td>
+          <td>Bangalore</td>
+          <td>12March</td>
+          <td>Karnataka</td>
+          <td>6789012345</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

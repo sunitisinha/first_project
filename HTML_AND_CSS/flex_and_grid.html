@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0px;
+      }
+
+      div h1 {
+        background-color: aqua;
+        padding: 40px;
+      }
+
+      div {
+        display: grid;
+        grid-template-columns: 20% 60% 20%; /* 2 rows 4 columns equal space*/
+        /*unequaal space*/
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        grid-gap: 20px;
+      }
+
+      #para1 {
+        grid-row: span 2;
+      }
+
+      #para2 {
+        grid-column: span 2;
+      }
+
+      #para3 {
+        grid-row: span 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Grid--which is used to make the alignments multiple rows and multiple columns-
+    Flex--which is used for single alignment
+    Float-Which is used to make the alignment right and left-->
+    <div>
+      <h1 id="para1">Heading1</h1>
+      <h1 id="para2">Heading2</h1>
+      <h1 id="para3">Heaing3</h1>
+      <h1>Heading4</h1>
+      <h1>Heading5</h1>
+      <h1>Heading6</h1>
+      <h1>Heading7</h1>
+      <h1>Heaing8</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+        transition: width 4s, height 4s, background-color 4s, transform 4s,
+          border-radius 5s;
+      }
+
+      div:hover {
+        background-color: red;
+        width: 400px;
+        height: 400px;
+        transform: rotate(-360deg);
+        border-radius: 50%;
+      }
+
+      main {
+        background-color: navy;
+        height: 450px;
+        width: 100%;
+        /* animation-name: helo;
+        animation-duration: 13s; */
+        animation: helo 13s infinite;
+      }
+      @keyframes helo {
+        20% {
+          background-color: chartreuse;
+        }
+        40% {
+          background-color: darkgreen;
+        }
+        60% {
+          background-color: red;
+        }
+        80% {
+          background-color: purple;
+        }
+        100% {
+          background-color: yellow;
+        }
+      }
+
+      section {
+        background-image: url("images/image.png");
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        animation: hi 13s infinite;
+      }
+
+      @keyframes hi {
+        20% {
+          background-image: url("images/image.png");
+        }
+        40% {
+          background-image: url("images/image copy.png");
+        }
+      }
+
+      article {
+        display: none;
+      }
+
+      aside:hover article {
+        display: block;
+      }
+    </style>
+    <!-- <script src=""https://kit.fontawesome.com/5c6d09dda0.js" crosso -->
+  </head>
+  <body>
+    <!--Transitions--time limit to execute the action
+  Animations-
+  fontawesome.com-->
+
+    <div></div>
+
+    <main></main>
+
+    <section></section>
+
+    <aside>
+      <p>Courses</p>
+      <article>
+        <p>Frontend</p>
+        <p>Backend</p>
+      </article>
+    </aside>
+  </body>
+</html>

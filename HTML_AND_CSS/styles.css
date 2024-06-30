@@ -1,0 +1,42 @@
+textarea {
+  vertical-align: middle;
+  align: center;
+}
+
+#suniti {
+  vertical-align: middle;
+}
+
+body {
+  background-color: blue;
+  border-style: dotted;
+}
+
+#item1 {
+  background-color: yellow;
+  padding: 50px;
+  color: white;
+  text-align: center;
+  margin: 50px;
+  width: 300px;
+  height: 500px;
+}
+
+.item2 {
+  background-color: blue;
+  padding: 50px;
+  color: white;
+  margin: 50px;
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  color: navy;
+}
+
+#head {
+  color: chartreuse;
+  background-color: black;
+  padding: 20px;
+}
