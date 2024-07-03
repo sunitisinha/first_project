@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Page</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      .main_frontend {
+        text-align: center;
+      }
+
+      .main_frontend h1 {
+        color: orange;
+      }
+
+      .main_frontend button {
+        background-color: orange;
+        color: white;
+      }
+
+      .main_frontend .second_button {
+        background-color: darkblue;
+      }
+
+      .second_section {
+        width: 100%;
+        height: 200px;
+        border: 1px solid black;
+        box-shadow: 5px 5px 10px;
+      }
+
+      .second_section p b {
+        text-align: center;
+        color: orange;
+      }
+
+      .third_section {
+        width: 100%;
+        height: 200px;
+        border: 1px solid black;
+        box-shadow: 5px 5px 10px;
+        color: black;
+      }
+
+      .third_section p b {
+        text-align: center;
+        color: orange;
+      }
+
+      .forth_section {
+        width: 100%;
+        height: 200px;
+        border: 1px solid black;
+        box-shadow: 5px 5px 10px;
+      }
+
+      .forth_section p b {
+        text-align: center;
+        color: orange;
+      }
+
+      .forth_section {
+        width: 100%;
+        height: 200px;
+        border: 1px solid black;
+        box-shadow: 5px 5px 10px;
+        margin-bottom: 10px;
+      }
+
+      .forth_section p b {
+        text-align: center;
+        color: orange;
+      }
+
+      .main_html ul {
+        display: none;
+      }
+
+      .main_html:hover #inline_html {
+        display: block;
+        width: 100%;
+        height: 200px;
+        height: 100px;
+      }
+
+      .main_html h1 {
+        background-color: orange;
+      }
+
+      .main_css ul {
+        display: none;
+      }
+
+      .main_css:hover #inline_css {
+        display: block;
+        width: 100%;
+        height: 200px;
+        height: 100px;
+      }
+
+      .main_css h1 {
+        background-color: orange;
+      }
+
+      .main_javascript ul {
+        display: none;
+      }
+
+      .main_javascript:hover #inline_javascript {
+        display: block;
+        width: 100%;
+        height: 200px;
+        height: 100px;
+      }
+
+      .main_javascript h1 {
+        background-color: orange;
+      }
+
+      .main_reactjs ul {
+        display: none;
+      }
+
+      .main_reactjs:hover #inline_reactjs {
+        display: block;
+        width: 100%;
+        height: 200px;
+        height: 100px;
+      }
+
+      .main_reactjs h1 {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <script
+    src="https://kit.fontawesome.com/5c6d09dda0.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <marquee
+      behaviour="alternate"
+      direction="left"
+      onMouseOver="this.stop()"
+      onMouseOut="this.start()"
+      >Our best offer ever!! Summer Special-Get 3 Courses at 22499/- only.<a
+        href=""
+      >
+        Read More
+      </a>
+    </marquee>
+    <header>
+      <h2>Email:sunitisinha@gmail.com</h2>
+      <p>Contact:+91 9876543210</p>
+      <div class="icons">
+        <a href="https://www.facebook.com/login.php/"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://x.com/twitt_login?lang=en"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/accounts/login/?hl=en">
+          <i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/feed/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </header>
+
+    <div class="content">
+      <div>
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h1>RJ Technology</h1>
+      </div>
+
+      <div class="items">
+        <a href="index.html">Home</a>
+        <a href="">About</a>
+
+        <div id="courses">
+          <a href="#">Courses</a>
+          <div id="article">
+            <p><a href="frontend.html">Frontend</a></p>
+            <p><a href="backend.html">Backend</a></p>
+            <p><a href="">Full Stack</a></p>
+          </div>
+        </div>
+
+        <a href="">Online Training</a>
+        <a href="">Contact</a>
+      </div>
+      <div>
+        <button>
+          <b>Enquiry</b>
+
+          <form>
+            <h1>Request for<br />Class Room & Online Training Quotation</h1>
+            <div id="classroom">
+              <i class="fa-sharp fa-solid fa-house-chimney"></i>
+              <span>Classroom</span>
+              <i class="fa-solid fa-laptop"></i>
+              <span>Online</span>
+            </div>
+
+            <input type="text" name="name" placeholder="Enter Your Name" />
+            <br /><br />
+            <input type="email" name="email" placeholder="Enter Your Email" />
+            <br /><br />
+            <input
+              type="number"
+              name="mobile"
+              placeholder="Enter Your Mobile No."
+            />
+            <br /><br />
+            <label for="course"></label>
+            <select name="course" id="course">
+              <option value="">Select Course</option>
+              <option value="html">HTML5</option>
+              <option value="css">CSS</option>
+              <option value="javascript">Javascript</option>
+              <option value="react">React JS</option>
+            </select>
+
+            <br /><br /><br />
+
+            <input type="button" id="submit" value="Submit Query" />
+          </form>
+        </button>
+      </div>
+    </div>
+
+    <div class="main_frontend">
+      <h1>FrontEnd</h1>
+
+      <button><i class="fa-solid fa-user"></i>Enroll</button>
+      <button class="second_button">Javascript</button>
+      <button class="second_button">React</button>
+      <button><i class="fa-solid fa-calendar-days"></i>View Batches</button>
+    </div>
+
+    <div class="second_section">
+      <p><b>Who this course is for?</b></p>
+      <ul>
+        <li>
+          Manual testers,Non-programming awareness testers interested in
+          learning Automaton
+        </li>
+        <li>Any Software engineer who are interested in Mobile Technologies</li>
+        <li>Freshers/Undergraduates/Graduates/Software Testers</li>
+      </ul>
+    </div>
+
+    <div class="third_section">
+      <p><b>Why take this course?</b></p>
+      <ul>
+        <li>
+          Working professionals who wants to upgrade their skills from manual
+          training
+        </li>
+        <li>One who is willing to move into automation testing projects</li>
+        <li>
+          One who is working in automation and want to learn advance concepts
+          for implementing in their projects.
+        </li>
+      </ul>
+    </div>
+
+    <div class="forth_section">
+      <p><b>What you will learn?</b></p>
+      <ul>
+        <li>
+          Manual testers,Non-programming aware testers interested in learning
+          Automation
+        </li>
+        <li>You will be able to handle real time challenges using Selenium</li>
+        <li>Complete knowledge on Test NG,MAVEN,JENKINS</li>
+        <li>
+          You will improve your coding skills in writing optimized code for
+          Automating test cases
+        </li>
+        <li>In-depth understanding of real-time selenium CHALLENGES</li>
+        <li>
+          By the end of this course You will be Mastered on Selenium Web driver
+          with Strong Core JAVA basics
+        </li>
+        <li>
+          You will not have java coding experiencr to start this course Even non
+          programming candidates can follow this course
+        </li>
+      </ul>
+    </div>
+
+    <div class="main_html">
+      <h1>HTML</h1>
+      <ul id="inline_html">
+        <li>
+          Manual testers,Non-programming aware testers interested in learning
+          Automation
+        </li>
+        <li>You will be able to handle real time challenges using Selenium</li>
+        <li>Complete knowledge on Test NG,MAVEN,JENKINS</li>
+        <li>
+          You will improve your coding skills in writing best optimized code for
+          automating test cases
+        </li>
+
+        <li>
+          By the end of this course You will be Mastered on Selenium Web driver
+          with Strong Core JAVA basics
+        </li>
+        <li>
+          You will not have java coding experiencr to start this course Even non
+          programming candidates can follow this course
+        </li>
+      </ul>
+    </div>
+
+    <div class="main_css">
+      <h1>CSS</h1>
+      <ul id="inline_css">
+        <li>
+          Manual testers,Non-programming aware testers interested in learning
+          Automation
+        </li>
+        <li>You will be able to handle real time challenges using Selenium</li>
+        <li>Complete knowledge on Test NG,MAVEN,JENKINS</li>
+        <li>
+          You will improve your coding skills in writing best optimized code for
+          automating test cases
+        </li>
+
+        <li>
+          By the end of this course You will be Mastered on Selenium Web driver
+          with Strong Core JAVA basics
+        </li>
+        <li>
+          You will not have java coding experiencr to start this course Even non
+          programming candidates can follow this course
+        </li>
+      </ul>
+    </div>
+
+    <div class="main_javascript">
+      <h1>Javscript</h1>
+      <ul id="inline_javascript">
+        <li>
+          Manual testers,Non-programming aware testers interested in learning
+          Automation
+        </li>
+        <li>You will be able to handle real time challenges using Selenium</li>
+        <li>Complete knowledge on Test NG,MAVEN,JENKINS</li>
+        <li>
+          You will improve your coding skills in writing best optimized code for
+          automating test cases
+        </li>
+
+        <li>
+          By the end of this course You will be Mastered on Selenium Web driver
+          with Strong Core JAVA basics
+        </li>
+        <li>
+          You will not have java coding experiencr to start this course Even non
+          programming candidates can follow this course
+        </li>
+      </ul>
+    </div>
+
+    <div class="main_reactjs">
+      <h1>ReactJS</h1>
+      <ul id="inline_reactjs">
+        <li>
+          Manual testers,Non-programming aware testers interested in learning
+          Automation
+        </li>
+        <li>You will be able to handle real time challenges using Selenium</li>
+        <li>Complete knowledge on Test NG,MAVEN,JENKINS</li>
+        <li>
+          You will improve your coding skills in writing best optimized code for
+          automating test cases
+        </li>
+
+        <li>
+          By the end of this course You will be Mastered on Selenium Web driver
+          with Strong Core JAVA basics
+        </li>
+        <li>
+          You will not have java coding experiencr to start this course Even non
+          programming candidates can follow this course
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

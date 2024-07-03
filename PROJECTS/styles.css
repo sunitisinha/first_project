@@ -1,0 +1,341 @@
+marquee {
+  background-color: orange;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  width: 100%;
+}
+
+header h2:hover,
+header p:hover {
+  color: red;
+}
+
+header h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+  color: white;
+}
+
+header p {
+  padding-left: 100px;
+  padding-top: 10px;
+  color: white;
+}
+
+.icons {
+  padding-left: 700px;
+  padding-top: 25px;
+}
+
+.icons i {
+  padding-right: 30px;
+  color: white;
+}
+
+.icons i:hover {
+  color: blue;
+}
+
+.content {
+  /* display: grid;
+  grid-template-columns: 6% 24% 50% 20%; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(196, 199, 199);
+  padding-bottom: 10px;
+}
+
+.content div i {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 10px;
+  color: rgb(74, 192, 74);
+}
+
+.content div h1 {
+  color: rgb(74, 192, 74);
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.content div i,
+.content div h1 {
+  display: inline;
+}
+
+.content .items {
+  margin-left: 50px;
+  padding-top: 30px;
+}
+
+.content .items a {
+  display: inline;
+  margin-right: 10px;
+  text-decoration: none;
+  font-family: cursive;
+  color: black;
+  display: inline;
+}
+
+.content .items a:hover {
+  background-color: white;
+  color: red;
+}
+
+#article {
+  display: none;
+  transition: display 3s;
+}
+
+#courses:hover #article {
+  display: block;
+  background-color: white;
+  color: black;
+  font-family: cursive;
+  width: 100px;
+  height: 130px;
+  position: absolute;
+  margin-left: 60px;
+
+  padding: 10px;
+  opacity: 1;
+}
+
+#article p a:hover {
+  display: block;
+  background-color: black;
+  color: white;
+}
+
+.content button {
+  margin-left: 650px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 25px;
+  background-color: rgb(74, 192, 74);
+  color: white;
+  margin-bottom: 20px;
+}
+
+section {
+  background-image: url("images/high_quality_one.jpg");
+  height: 400px;
+  width: 1220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: hi 10s infinite;
+  padding-top: 100px;
+  padding-left: 300px;
+  color: white;
+}
+
+section button {
+  background-color: rgb(74, 192, 74);
+  color: white;
+  padding: 10px;
+}
+
+@keyframes hi {
+  20% {
+    background-image: url("images/high_quality_two.jpg");
+  }
+  40% {
+    background-image: url("images/high_quality_three.jpg");
+  }
+
+  60% {
+    background-image: url("images/high_quality_four.jpg");
+  }
+  80% {
+    background-image: url("images/high_quality_five.jpg");
+  }
+}
+
+.content button form {
+  display: none;
+}
+
+.content button:hover form {
+  display: block;
+  position: absolute;
+  background-color: rgb(243, 239, 239);
+  width: 400px;
+  height: 450px;
+  margin-left: -300px;
+  font-family: cursive;
+}
+
+.content button form h1 {
+  color: black;
+}
+
+.content button form #classroom {
+  background-color: rgb(13, 115, 169);
+  color: black;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.content button form #classroom i {
+  padding-right: 20px;
+  color: black;
+}
+
+.content button form input {
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 1px solid black;
+  border-style: ridge;
+}
+
+#submit {
+  background-color: rgb(13, 115, 169);
+  font-family: cursive;
+  border: 1px solid black;
+  color: black;
+  font-size: 15px;
+  padding: 20px 120px;
+  border-radius: 15px;
+}
+
+#course {
+  padding-right: 60px;
+  padding-left: 60px;
+  border-bottom: 1px solid blue;
+}
+
+#online {
+  display: none;
+  transition: display 3s;
+}
+
+section button:hover #online {
+  display: block;
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 260px;
+  width: 250px;
+  margin-left: 70px;
+  margin-top: -200px;
+}
+
+#online input {
+  border-width: 0 0 2px;
+}
+
+#online textarea {
+  border-width: 0 0 2px;
+}
+
+#quick_enquiry {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.key_features {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.features div {
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(53, 142, 99);
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.features div span {
+  width: 50px;
+  height: 50px;
+  background-color: #eeecec;
+  position: absolute;
+  bottom: -30%;
+  border-radius: 50%;
+}
+
+.features div span i {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.features div:hover {
+  background-color: white;
+  color: black;
+}
+
+.our_courses {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.development {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+}
+
+.development div {
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.development div h2 {
+  background-color: rgb(5, 236, 5);
+  width: 500px;
+  height: 50px;
+}
+
+.development div i {
+  color: yellow;
+}
+
+.development div button {
+  background-color: rgba(56, 234, 7, 0.63);
+  padding: 20px 50px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: rgb(246, 248, 246);
+}
+
+.footer div i,
+.footer div h3 {
+  display: inline;
+}
+
+.footer div span {
+  width: 100px;
+  height: 100px;
+
+  background-color: rgb(52, 113, 52);
+  border-radius: 50%;
+}

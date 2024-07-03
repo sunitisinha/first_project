@@ -4,140 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Page</title>
-    <style>
-      marquee {
-        background-color: orange;
-        width: 100%;
-      }
-
-      header {
-        display: flex;
-        background-color: black;
-        width: 100%;
-      }
-
-      header h2 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        padding-left: 30px;
-        padding-top: 10px;
-        color: white;
-      }
-
-      header p {
-        padding-left: 100px;
-        padding-top: 10px;
-        color: white;
-      }
-
-      .icons {
-        padding-left: 700px;
-        padding-top: 25px;
-      }
-
-      .icons i {
-        padding-right: 30px;
-        color: white;
-      }
-
-      .content {
-        /* display: grid;
-        grid-template-columns: 6% 24% 50% 20%; */
-        display: flex;
-        background-color: rgb(196, 199, 199);
-        padding-bottom: 10px;
-      }
-
-      .content i {
-        font-size: 20px;
-        padding-top: 30px;
-        padding-left: 10px;
-        color: rgb(74, 192, 74);
-      }
-
-      .content h1 {
-        color: rgb(74, 192, 74);
-        padding-left: 5px;
-        font-size: 20px;
-        margin-top: 30px;
-      }
-
-      .content .items {
-        margin-left: 70px;
-        padding-top: 30px;
-      }
-
-      .content .items a {
-        margin-right: 30px;
-        text-decoration: none;
-        font-family: cursive;
-        color: black;
-        display: inline;
-      }
-
-      .content .items a:hover {
-        background-color: white;
-        color: red;
-      }
-
-      #article {
-        display: none;
-      }
-
-      #courses:hover #article {
-        display: block;
-        background-color: white;
-        color: black;
-        font-family: cursive;
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        margin-left: 120px;
-        margin-top: 10px;
-        padding-left: 10px;
-      }
-
-      .content button {
-        margin-left: 650px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-top: 25px;
-        background-color: rgb(74, 192, 74);
-        color: white;
-        margin-bottom: 20px;
-      }
-
-      section {
-        background-image: url("images/high_quality_one.jpg");
-        height: 400px;
-        width: 1220px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        animation: hi 8s infinite;
-        padding-top: 100px;
-        padding-left: 300px;
-        color: white;
-      }
-
-      section button {
-        background-color: rgb(74, 192, 74);
-        color: white;
-        padding: 10px;
-      }
-
-      @keyframes hi {
-        20% {
-          background-image: url("images/high_quality_two.jpg");
-        }
-        40% {
-          background-image: url("images/high_quality_three.jpg");
-        }
-
-        60% {
-          background-image: url("images/high_quality_four.jpg");
-        }
-      }
-    </style>
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <script
     src="https://kit.fontawesome.com/5c6d09dda0.js"
@@ -159,33 +26,81 @@
       <h2>Email:sunitisinha@gmail.com</h2>
       <p>Contact:+91 9876543210</p>
       <div class="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-square-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.facebook.com/login.php/"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://x.com/twitt_login?lang=en"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/accounts/login/?hl=en">
+          <i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/feed/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
       </div>
     </header>
 
     <div class="content">
-      <i class="fa-solid fa-graduation-cap"></i>
-      <h1>RJ Technology</h1>
+      <div>
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h1>RJ Technology</h1>
+      </div>
+
       <div class="items">
         <a href="">Home</a>
         <a href="">About</a>
 
-        <a href="" id="courses"
-          >Courses
+        <div id="courses">
+          <a href="#">Courses</a>
           <div id="article">
-            <p>Frontend</p>
-            <p>Backend</p>
-            <p>Full Stack</p>
+            <p><a href="frontend.html">Frontend</a></p>
+            <p><a href="backend.html">Backend</a></p>
+            <p><a href="">Full Stack</a></p>
           </div>
-        </a>
+        </div>
 
         <a href="">Online Training</a>
         <a href="">Contact</a>
       </div>
-      <button><b>Enquiry</b></button>
+      <div>
+        <button>
+          <b>Enquiry</b>
+
+          <form>
+            <h1>Request for<br />Class Room & Online Training Quotation</h1>
+            <div id="classroom">
+              <i class="fa-sharp fa-solid fa-house-chimney"></i>
+              <span>Classroom</span>
+              <i class="fa-solid fa-laptop"></i>
+              <span>Online</span>
+            </div>
+
+            <input type="text" name="name" placeholder="Enter Your Name" />
+            <br /><br />
+            <input type="email" name="email" placeholder="Enter Your Email" />
+            <br /><br />
+            <input
+              type="number"
+              name="mobile"
+              placeholder="Enter Your Mobile No."
+            />
+            <br /><br />
+            <label for="course"></label>
+            <select name="course" id="course">
+              <option value="">Select Course</option>
+              <option value="html">HTML5</option>
+              <option value="css">CSS</option>
+              <option value="javascript">Javascript</option>
+              <option value="react">React JS</option>
+            </select>
+
+            <br /><br /><br />
+
+            <input type="button" id="submit" value="Submit Query" />
+          </form>
+        </button>
+      </div>
     </div>
 
     <section>
@@ -202,7 +117,248 @@
         molestias, consectetur sit. Ut, quo?
       </p>
 
-      <button>Apply Online</button>
+      <button>
+        Apply Online
+        <form id="online">
+          <h1>Quick Enquiry</h1>
+          <input type="text" placeholder="Name*" />
+          <br /><br />
+          <input type="text" placeholder="10 Digit Mobile Number" />
+          <br /><br />
+          <input type="text" placeholder="Email" />
+          <br /><br />
+          <textarea></textarea>
+          <br /><br />
+          <input
+            type="button"
+            id="quick_enquiry"
+            value="I am interested Tell me More"
+          />
+        </form>
+      </button>
     </section>
+
+    <div class="key_features">
+      <h1>Key Features</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+        suscipit illo sed magnam consequatur repellat fugit, iste doloremque
+        sequi doloribus<br />
+        deleniti, nam earum dolores adipisci.
+      </p>
+    </div>
+
+    <div class="features">
+      <div>
+        <span><i class="fa-solid fa-w"></i></span>
+        <h3>Expert Faculty</h3>
+        <p>
+          Lorem ipsum dolor sit amet<br />
+          consectetur adipisicing elit.<br />
+          Tempore, repellat.
+        </p>
+      </div>
+
+      <div>
+        <span><i class="fa-regular fa-clock"></i></span>
+        <h3>Well Equiped Labs</h3>
+        <p>
+          Lorem ipsum dolor sit amet<br />
+          consectetur adipisicing elit.<br />
+          Tempore, repellat.
+        </p>
+      </div>
+
+      <div>
+        <span><i class="fa-solid fa-landmark"></i></span>
+        <h3>Quality education</h3>
+        <p>
+          Lorem ipsum dolor sit amet<br />
+          consectetur adipisicing elit.<br />
+          Tempore, repellat.
+        </p>
+      </div>
+
+      <div>
+        <span><i class="fa-solid fa-phone"></i></span>
+
+        <h3>24*7 Access</h3>
+        <p>
+          Lorem ipsum dolor sit amet<br />
+          consectetur adipisicing elit.<br />
+          Tempore, repellat.
+        </p>
+      </div>
+    </div>
+
+    <div class="our_courses">
+      <h1>Our Courses</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quam
+        doloribus maiores non enim ducimus dolorum nemo, molestias numquam
+        voluptatum <br />illo, iste accusamus distinctio error.
+      </p>
+    </div>
+
+    <div class="development">
+      <div>
+        <h2>Full Stack Development</h2>
+
+        <span>Cras ultricies lacus consectetur,<br />consectetur</span>
+        <br />
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur<br />
+          adipisicing elit. Error dolore, nulla<br />
+          ipsam eum iusto molestias?
+        </p>
+        <a href="document.html"><button>Apply Online</button></a>
+      </div>
+
+      <div>
+        <h2>Front End Development</h2>
+
+        <span>Cras ultricies lacus consectetur,<br />consectetur</span><br />
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur<br />
+          adipisicing elit. Error dolore, nulla<br />
+          ipsam eum iusto molestias?
+        </p>
+        <a href="document.html"><button>Apply Online</button></a>
+      </div>
+
+      <div>
+        <h2>Backend Development</h2>
+
+        <span>Cras ultricies lacus consectetur,<br />consectetur</span><br />
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur<br />
+          adipisicing elit. Error dolore, nulla<br />
+          ipsam eum iusto molestias?
+        </p>
+        <a href="document.html"><button>Apply Online</button></a>
+      </div>
+
+      <div>
+        <h2>Data Science</h2>
+
+        <span>Cras ultricies lacus consectetur,<br />consectetur</span><br />
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur<br />
+          adipisicing elit. Error dolore, nulla<br />
+          ipsam eum iusto molestias?
+        </p>
+        <a href="document.html"><button>Apply Online</button></a>
+      </div>
+
+      <div>
+        <h2>AWS</h2>
+
+        <span>Cras ultricies lacus consectetur,<br />consectetur</span><br />
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur<br />
+          adipisicing elit. Error dolore, nulla<br />
+          ipsam eum iusto molestias?
+        </p>
+        <a href="document.html"><button>Apply Online</button></a>
+      </div>
+
+      <div>
+        <h2>Devops</h2>
+
+        <span>Cras ultricies lacus consectetur,<br />consectetur</span><br />
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur<br />
+          adipisicing elit. Error dolore, nulla<br />
+          ipsam eum iusto molestias?
+        </p>
+        <a href="document.html"><button>Apply Online</button></a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3>RJ Technology</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur<br />
+          adipisicing elit. Ad perferendis<br />
+          laborum, vitae necessitatibus eaque<br />
+          commodi officiis tenetur velit quis magni<br />
+          eos ea impedit facilis<br />
+          porro? Excepturi quam eos<br />
+          aliquid. Doloremque.
+        </p>
+      </div>
+
+      <div>
+        <h3>Our Services</h3>
+        <p>Mobile Application Design</p>
+        <p>Web Application DEsign</p>
+        <p>Websites Design</p>
+        <p>Web User Interface Design</p>
+        <p>Web UX Design and Research0</p>
+        <p>Theme Development Design</p>
+      </div>
+
+      <div>
+        <h3>Head Office</h3>
+        <p>
+          Mararthalli,Bengaluru<br />Karnataka-560037<br />
+          Phone:+91 9025741101<br />Email:sunitisinha@gmail.com<br /><br />
+        </p>
+
+        <br />
+        <p><b>Office Time:</b>10AM-6PM</p>
+      </div>
+
+      <div>
+        <h3>Suscribe Us</h3>
+        <br />
+        <br />
+        <input type="text" />
+        <i class="fa-solid fa-paper-plane"></i> <br />
+
+        <span
+          ><a href="https://www.facebook.com/login.php/"
+            ><i class="fa-brands fa-facebook"></i></a
+        ></span>
+        <span
+          ><a href="https://x.com/twitt_login?lang=en"
+            ><i class="fa-brands fa-twitter"></i></a
+        ></span>
+        <span
+          ><a href="https://www.instagram.com/accounts/login/?hl=en">
+            <i class="fa-brands fa-square-instagram"></i></a
+        ></span>
+        <span
+          ><a href="https://www.linkedin.com/feed/"
+            ><i class="fa-brands fa-linkedin"></i></a
+        ></span>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: grid;
+        grid-template-columns: 40% 60%;
+      }
+
+      .main .header {
+        background-color: rgb(136, 107, 136);
+        width: 500px;
+        height: 700px;
+        padding-left: 100px;
+        padding-top: 200px;
+      }
+
+      .main .body .first_section {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+      }
+
+      .main .body form .first_section div input {
+        box-shadow: 5px 5px 10px grey;
+      }
+
+      .main .body .second_section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 70px;
+      }
+
+      .main .body form .second_section div input {
+        box-shadow: 5px 5px 10px grey;
+        padding-right: 150px;
+      }
+
+      textarea {
+        width: 800px;
+        height: 100px;
+        box-shadow: 5px 5px 10px;
+      }
+
+      .main .body .last_section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 70px;
+      }
+
+      .main .body form .last_section div input {
+        padding-right: 200px;
+      }
+
+      .main .body form button {
+        margin-top: 50px;
+        margin-right: 30px;
+        margin-left: 200px;
+        border: 1px solid black;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1>RJ</h1>
+        <p>Technology</p>
+        <h1>M.VERVE</h1>
+        <p>Inspired Applications</p>
+        <p>To connect with us<br />please enter the details</p>
+      </div>
+
+      <div class="body">
+        <h2>Create an account</h2>
+        <form>
+          <div class="first_section">
+            <div>
+              <label for="first_name">First Name</label>
+              <br />
+              <input
+                id="first_name"
+                name="first_name"
+                placeholder="First Name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="last_name">Last Name</label>
+              <br />
+              <input
+                id="last_name"
+                name="last_name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="age">Age</label>
+              <br />
+              <input id="age" name="age" placeholder="18-100" required />
+            </div>
+          </div>
+
+          <div class="second_section">
+            <div>
+              <label for="mobile_number">Mobile Number</label>
+              <br />
+              <input
+                type="number"
+                name="mobile_number"
+                id="mobile_number"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email"> Email </label>
+              <br />
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <br />
+          <br /><br />
+
+          <label for="description">Description</label>
+          <br />
+          <textarea>emailno@gmail.com</textarea>
+
+          <div class="last_section">
+            <div>
+              <label for="password">Password</label>
+              <br />
+              <input type="password" id="password" name="password" required />
+            </div>
+
+            <div>
+              <label for="confirm_password"> Confirm Password </label>
+              <br />
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+              />
+            </div>
+          </div>
+
+          <button>RESET</button>
+          <button>SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
