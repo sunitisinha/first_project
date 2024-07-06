@@ -46,12 +46,12 @@ header p {
   /* display: grid;
   grid-template-columns: 6% 24% 50% 20%; */
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 20% 70% 10%;
   background-color: rgb(196, 199, 199);
   padding-bottom: 10px;
 }
 
-.content div i {
+/* .content div i{
   font-size: 20px;
   padding-top: 30px;
   padding-left: 10px;
@@ -67,9 +67,26 @@ header p {
 .content div i,
 .content div h1 {
   display: inline;
+  margin-top: 50px;
+} */
+
+.content .technology h1 {
+  font-size: 20px;
+  margin-left: 25px;
 }
 
-.content .items {
+.content .technology h1,
+.content .technology i {
+  display: inline;
+  margin-top: 20px;
+  color: rgb(74, 192, 74);
+}
+
+.content div {
+  font-size: 15px;
+  color: rgb(74, 192, 74);
+  display: inline;
+
   margin-left: 50px;
   padding-top: 30px;
 }
@@ -114,7 +131,7 @@ header p {
 }
 
 .content button {
-  margin-left: 650px;
+  margin-left: 20px;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 25px;
@@ -157,11 +174,11 @@ section button {
   }
 }
 
-.content button form {
+.content .enquiry button form {
   display: none;
 }
 
-.content button:hover form {
+.content .enquiry button:hover form {
   display: block;
   position: absolute;
   background-color: rgb(243, 239, 239);
@@ -171,22 +188,24 @@ section button {
   font-family: cursive;
 }
 
-.content button form h1 {
+.content .enquiry button form h1 {
   color: black;
+  font-size: 15px;
+  display: block;
 }
 
-.content button form #classroom {
+.content .enquiry button form #classroom {
   background-color: rgb(13, 115, 169);
   color: black;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-top: 15px;
   margin-right: 15px;
   margin-left: 15px;
-  font-size: 20px;
-  padding-bottom: 20px;
+  font-size: 15px;
+  display: block;
 }
 
-.content button form #classroom i {
+.content div button form #classroom i {
   padding-right: 20px;
   color: black;
 }
@@ -206,6 +225,7 @@ section button {
   font-size: 15px;
   padding: 20px 120px;
   border-radius: 15px;
+  margin-bottom: 50px;
 }
 
 #course {
@@ -271,15 +291,15 @@ section button:hover #online {
   width: 50px;
   height: 50px;
   background-color: #eeecec;
+
   position: absolute;
-  bottom: -30%;
   border-radius: 50%;
 }
 
 .features div span i {
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 1%;
+  right: 30%;
 }
 
 .features div:hover {
