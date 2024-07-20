@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Call,Apply and Bind Parameters</title>
+  </head>
+
+  <body>
+    <script>
+      let obj = {
+        name: "Suniti",
+        city: "Bangalore",
+        myDisplay: function (state, country, contact) {
+          let x = `Name:${this.name}\nCity:${this.city}\nState:${state}\nCountry:${country}\nContact:${contact}`;
+          console.log(x);
+        },
+      };
+
+      obj.myDisplay("Karnataka", "India", 3456767890);
+
+      // // // //call--which is used to access the outside of the object parameters
+
+      let obj1 = { name: "Moorthy", city: "Chennai" };
+      obj.myDisplay.call(obj1, "Tamil Nadu", "India", 3456789089);
+
+      let obj2 = { name: "Salil", city: "Mumbai" };
+      obj.myDisplay.apply(obj2, ["Maharashtra", "India", 9078907890]);
+      // //apply
+      //bind
+
+      let x = obj.myDisplay.bind(obj2);
+      x("Jharkhand", "India", 8906767890);
+      //Call back function--one function passed into another function as an argument type
+
+      function myApp1(x) {
+        console.log("1st function " + x);
+      }
+
+      function myApp2(y) {
+        console.log("2nd function " + y);
+      }
+
+      function myApp3(a, b, c) {
+        console.log("3rd function");
+        a("HTML");
+        b("CSS");
+        c("Javascript");
+      }
+
+      function myApp4(z) {
+        console.log("4th function " + z);
+      }
+
+      myApp3(myApp1, myApp2, myApp4);
+      // const myApp1 = (x) => {
+      //   console.log("1st function" + " " + x);
+      // };
+
+      // const myApp2 = (y) => {
+      //   console.log("2nd functrion" + " " + y);
+      // };
+
+      // const myApp3 = (a, b, c) => {
+      //   console.log("3rd function");
+      //   a("HTML");
+      //   b("CSS");
+      //   c("Javascript");
+      // };
+
+      // const myApp4 = (z) => {
+      //   console.log("4th function" + " " + z);
+      // };
+
+      // myApp3(myApp4, myApp2, myApp1);
+    </script>
+  </body>
+</html>

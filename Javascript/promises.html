@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Promises</title>
+  </head>
+  <body>
+    <script>
+      //setTimeout--It takes some time limit to execute the function
+      //setInterval--within the specified time limit it executes the function repeatedly
+      // setTimeout(any function(){
+
+      // },time limit);
+
+      // setTimeout(() => {
+      //   console.log("Backend");
+      // }, 4000);
+      // setTimeout(() => {
+      //   console.log("Fullstack..!");
+      // }, 4000);
+
+      // setInterval(() => {
+      //   console.log("Fullstack..!");
+      // }, 5000);
+
+      //sync function-The js function everything is sync function because the code will execute step by step
+
+      // console.log("Frontend..!");
+      // console.log("Backend..!");
+      // console.log("Fullstack..!");
+
+      // //async function-It will not wait for any statement.It automatically goes for next step.
+
+      // console.log("Frontend..!");
+      // setTimeout(() => {
+      //   console.log("Backend..!");
+      // }, 4000);
+      // console.log("Fullstack..!");
+
+      //Promises are handling asynchronous function.It takes two arguments one is resolve and one is reject.
+      //Promises are used for handling APIs.
+      //APIS are Application Program Interfaces used as a link from frontend to backend or from backend to frontend.
+
+      //resolve--success
+      //When the promise is success we will get resolve stataement.
+      //reject--failure
+      //When the promises will be failure we will get reject statement.
+
+      //syntax of promises
+      // let x = new Promise((resolve, reject) => {
+      //   a = 200;
+      //   b = 300;
+      //   if (a == 200 || b == 300) {
+      //     resolve("success");
+      //   } else {
+      //     reject("failure");
+      //   }
+      // });
+      // console.log(x);
+
+      //Synchromous--the code will execute step by step
+      //Asynchronous function--It will not wait for any statement.It automatically goes for the next statement.
+      //Promises--Promises are handling asynchronous functions.It will take two statements one is resolve and one is reject.
+      //When the promises is success we get resolve statements.
+      //When we get failure statements
+      //resolve--then()
+      //reject--catch()--which is used to handle errors
+      // let x = new Promise((resolve, reject) => {
+      //   let a = 40;
+      //   let b = 60;
+      //   if (a == "40" || b == 40) {
+      //     resolve("Success");
+      //   } else {reject("Failure..!")};
+      // });
+      // console.log(x);
+      // // //then() is a function and resolve is an argument and we will give any parameter when the x  promise will be success.
+      // // //When it will be catch() then error parameter will be there and we will get failure.
+      // // //In this x will be accessed then and catch
+      // x.then((res) => {
+      //   console.log(res);
+      // }).catch((error) => {
+      //   console.log(error);
+      // });
+
+      // console.log("Frontend..!");
+      // setTimeout(() => {
+      //   console.log("Backend");
+      // }, 4000);
+      // console.log("FullStack..!");
+
+      // //await--we can hold asynchronous function
+
+      // async function myName() {
+      //   console.log("Frontend..!");
+      //   let x = new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       resolve("Backend..!");
+      //     }, 4000);
+      //   });
+
+      //   let y = await x;
+      //   console.log(y);
+      //   console.log("Fullstack..!");
+      // }
+
+      // myName();
+    </script>
+  </body>
+</html>

@@ -239,12 +239,24 @@ section button {
   transition: display 3s;
 }
 
+#online_p {
+  margin-left: 200px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  color: white;
+}
+
+#online_p:active #online {
+  display: none;
+}
+
 section button:hover #online {
   display: block;
   position: absolute;
   background-color: white;
   color: black;
-  height: 260px;
+  height: 280px;
   width: 250px;
   margin-left: 70px;
   margin-top: -200px;

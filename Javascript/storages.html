@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label>Fullname:</label>
+      <input type="text" id="name" />
+      <br /><br />
+      <label>Email Id:</label>
+      <input type="email" id="email" />
+      <br /><br />
+      <label>Password:</label>
+      <input type="password" id="pswd" />
+      <br /><br />
+      <label>Confirm Password:</label>
+      <input type="password" id="cpswd" />
+      <br /><br />
+      <input type="submit" />
+    </form>
+    <script>
+      //Storages--
+      //Local storage--manually we have to delete by using clear function
+      //2 items--setItem--which is iused to store the data
+      //getItem--we have to get the data
+
+      //syntax--
+
+      //localStorage.setItem("key name",key data)
+
+      localStorage.setItem("FullName", "Moorthy B");
+      localStorage.setItem("City", "Bangalore");
+      localStorage.setItem("EmailId", "sunitisinha@gmail.com");
+      localStorage.setItem("Country", "India");
+      localStorage.setItem("Contact", 5678956789);
+
+      document.write("<br>");
+      let a = localStorage.getItem("FullName");
+      document.write(a);
+
+      document.write("<br>");
+      let b = localStorage.getItem("City");
+      document.write(b);
+
+      document.write("<br>");
+      let c = localStorage.getItem("EmailId");
+      document.write(c);
+
+      document.write("<br>");
+      let d = localStorage.getItem("Country");
+      document.write(d);
+
+      localStorage.clear();
+
+      sessionStorage.setItem("Id", 1);
+      sessionStorage.setItem("Book", "Javascript");
+      sessionStorage.setItem("Author", "Jhon");
+
+      document.write("<br>");
+      let e = sessionStorage.getItem("Author");
+      document.write(e);
+
+      // //Session Storage--once the session will be closed the data will be removed default
+      // //setItem--which is iused to store the data
+      // //getItem--we have to get the data
+
+      function formSubmit() {
+        let fullName = document.getElementById("name").value;
+        let emailId = document.getElementById("email").value;
+        let password = document.getElementById("pswd").value;
+        let confirmPassword = document.getElementById("cpswd").value;
+
+        if(fullName.length)
+      }
+    </script>
+  </body>
+</html>

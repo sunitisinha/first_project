@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <script>
+      //DOM--Document Object Model
+      //DOM HTMl--which is used to access the html elements
+
+      //selectors--
+      //There are 5 types of selectors--
+      //1.id selector--we can access the id
+      //document.getElementById("id name");
+
+      //2.class selector--we can access the class
+      //document.getElementsByClassName("class name");
+
+      //3.tag selector--we can access the tags
+      //document.getElementsByTagName("tag names");
+
+      //4.query selector
+      //id,class,tag
+
+      //document.querySelector("#id name");
+      //document.querySelector(".class name");
+      //document.querySelector("tag names");
+      //5.querySelectorAll
+
+      //DOM CSS--existing data we are adding the stylings
+      //querySelector--
+
+      //Events--Events are handling the functions
+      //onclick()--When we click the button then only functions will execute
+      //ondblclick()--When we click the thing two times then only execute
+      //onmouseover()--When the cursor will be moving to the particular thing then only function executing
+      //onmouseout()--When the cursor will move out of the thing then only function will be executing
+      //onkeypress()--When we click the enter button in keyboard then only we can execcute
+      //onkeyup()--input user giving the data without clicking the button we can release the data
+      //onsubmit()
+
+      //Create,Upadate,Read,Edit,Delete
+
+      //innerHTML--without block with element we are getting the text
+      //innerText--without block without element we are getting the text
+    </script>
+
+    <div id="myId">
+      <h1>Besant Technologies</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+        voluptatem ut in. Explicabo veniam quis accusamus maxime perferendis
+        dolores tempora.
+      </p>
+    </div>
+
+    <button onclick="myApp1()">Alert</button>
+
+    <button ondblclick="myApp2()">Add</button>
+
+    <button onmouseover="myApp3()">Update</button>
+
+    <button onmouseout="myApp4()">Delete</button>
+
+    <button onkeypress="myApp5()">Show</button>
+    <h1 id="data"></h1>
+
+    <br /><br />
+    <input type="text" id="user" onkeyup="myApp6()" />
+    <button>Submit</button>
+    <br /><br />
+    <span id="useData"></span>
+
+    <script>
+      // let a = document.getElementById("myId").innerText;
+      // console.log(a);
+
+      function myApp1() {
+        alert("Hello we are learning Javascript");
+      }
+
+      function myApp2() {
+        let x = (document.getElementById("data").innerHTML =
+          "Besant Technologies");
+      }
+
+      function myApp3() {
+        let x = (document.getElementById("data").innerHTML = "Moorthy");
+      }
+
+      function myApp4() {
+        let x = document.getElementById("data");
+        x.style.display = "none";
+      }
+
+      function myApp5() {
+        let x = document.getElementById("data");
+        x.style.display = "block";
+      }
+
+      function myApp6() {
+        let x = document.getElementById("user").value;
+        let y = (document.getElementById("useData").innerHTML = x);
+        document.getElementById("user")="";
+      }
+    </script>
+  </body>
+</html>

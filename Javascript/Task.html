@@ -5,104 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="index.js"></script>
+    <style>
+      .k{background-color:red;
+      color:white;
+      padding:50px;
+      width:300px;
+      font-family:cursive;
+    }
+    </style>
   </head>
-  <body>
-    <script>
-      //Alert()--to display error messages
-      //Array--By using simgle variable we can store multiple data
-      //[array data]
-      //mutable objects
-      //length
-      //position
+  <script>
+     //DOM--DOM stands for Document Object Model
+      // DOM HTML--which is used to access the HTML elemnts in Javascript
+      //selectors
+      //5 types of selectors
+      //id
+      //2.class selector
+      //3.tag selector
+      //4.querySElector
+      //5.queryAll selector()
 
-      //array methods
+      // DOM CSS--which are used to add stylings in
+      // Events--are handling the functions
+      //CRUD operations--dynamic effercts which are create,read,update,edit,delete
 
-      //pop(),push(),shift(),unshift(),splice(),slice(),indexof(),sort()
+  
+        // document.getElementBYId("id name")
 
-      //pop()--which is used to remove the element at the end of the array
+        // //class
+        // document.getElementsByClassName("class name");
 
-      arr = ["Moorthy", 23456, 99.6, true, false, null, "Hello"];
-      console.log(arr);
-      console.log(arr.length);
-      console.log(arr[6]);
-      arr.pop();
-      console.log(arr);
-      //push()
-      arr = ["Moorthy", 23456, 99.6, true, false, null, "Hello"];
-      arr.push(12345);
-      console.log(arr);
-      //shift()--which is used to remove the data from the beginning of the array
-      arr = ["Moorthy", 23456, 99.6, true, false, null, "Hello"];
-      arr.shift("Moorthy");
-      console.log(arr);
-      //unshift()
-      arr = ["Moorthy", 23456, 99.6, true, false, null, "Hello"];
-      arr.unshift(12345);
-      console.log(arr);
-      //splice()--we can add the data or we can remove the data
-      arr = ["Moorthy", 23456, 99.6, true, false, null, "Hello"];
-      arr.splice(1, 4, "Html", "css", "javascript", "react");
-      console.log(arr);
-      //slice()--which is used to get the selected elements
-      arr = ["Moorthy", 23456, 99.6, true, false, null, "Hello"];
-      console.log(arr);
-      x = arr.slice(1, 6);
-      console.log(x);
-      //indexof()--which is used to check the position of the element
+        // //tag
+        // document.getElementsByTagName("tag name");
 
-      arr = ["Moorthy", 23456, 99.6, true, false, null, "Hello"];
-      console.log(arr);
-      let x = arr.indexof(null);
-      console.log(x);
-      //sort()--which is used to make order wise of array
+        // //query 
 
-      let arr1 = [7, 6, 5, 8, 9, 0];
-      console.log(arr1);
-      arr1.sort();
-      console.log(arr1);
+        // document.querySelector("#id name");
+        // document.querySelector(".class Name");
+        // document.querySelector("tag name");
+        // </scrip>
 
-      //reverse()--which is used to make reverse order array
+        // //querySElector
 
-      arr = ["Moorthy", 23456, 99.6, true, false, null, "Hello"];
-      console.log(arr);
-      arr.reverse();
-      console.log(x);
+        // document.querySelectorAll("#id,.class,tagname");
+        </script>
 
-      //concat()--we can merge two array
-      arr = ["Moorthy", 23456, 99.6, true, false, null, "Hello"];
-      arr1 = [2, 3, 4, 56, 67];
-      x = arr1.concat(arr);
-      console.log(x);
+<div id="myId">
+  <h1>Frontend</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi minima sapiente omnis corporis et voluptate sit exercitationem facere placeat alias?</p>
+</div>
 
-      //Object--by using single variable we can store multiple data as a keyname and key value
-      //array--[]
-      //Object--{object data}
-      //{"keynames":key values}
-      var obj = {
-        Name: "Suniti",
-        City: "Bangalore",
-        Contact: 789067890,
-        State: "Karnataka",
-        Country: "India",
-      };
-      console.log(obj);
+<div id="myId1">
+  <h1>Backend</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur amet placeat commodi similique a aperiam autem minus nam architecto!</p>
+</div>
 
-      //two methods
-      //to get the data within the object
-      //.
-      //[]notation
-      console.log(obj.Contact);
-      console.log(obj.State);
-      console.log(obj["Name"]);ithmetic operators
+<script>
+
+  //It outputs only that particular ID
+    // let a=document.getElementById("myId");
+    // console.log(a);
+
+    //The class is called as collection.The output will be as a collection.It will give the output of that particular class.
+    // let a=document.getElementsByClassName("myClass");
+    // console.log(a);
 
 
-      console.log(typeof(obj));
+    //It will refer to same tags having different content.Like it will give output of first<h1>and second<h1>
+    // let a=document.getElementsByTagName("h1");
+    // console.log(a);
 
-      //Operators are the symbols which is used to make some mathematical or logical operations
-      //Arithmetic operators--symbols--+,-,*,/
-      //Logical Operators--&&,||
-      //Comparison Operators
-      //Ternary Operators--which is used to make single line condition true or false
+    //The advantage of querySelector is only one elemnt only one block we can access.We can access 
+
+    //It will access that particular Id
+    // let x=document.querySelector("#myId");
+    // console.log(x);
+
+    //It will access that particular class
+    // let x=document.querySelector(".myClass");
+    // console.log(x);
+
+    //It will access only one block one element
+    // let x=document.querySelector("h1");
+    // console.log(x);
+    // let x=document.querySelectorAll("#myId");
+    // console.log(x);
+    // //Only we are accesiing one block
+
+    //querySelectorAll--same id name we can access multiple blocks
+    
+
+    // let x=document.querySelectorAll("#myId");
+    // console.log(x);
+
+    // //Initially we dont have existing data.
+    // //2 methods we can add styles in javascript
+
+    //font-family---fontFamily   
+
+
+    let x=document.getElementById("myId");
+    x.style.backgroundColor="navy";
+    x.style.color="white";
+    x.style.padding="50px";
+    x.style.width="300px";
+    x.style.fontFamily="cursive";
+    x.style.float="right";
+
+    let y=document.getElementById("myId1");
+    y.classList.add("k");
+
     </script>
+
+
   </body>
 </html>
